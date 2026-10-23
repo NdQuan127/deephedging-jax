@@ -4,3 +4,4 @@ __pycache__/
 checkpoints/
 results/
 .ipynb_checkpoints/
+parity/

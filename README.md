@@ -111,6 +111,10 @@ The last verified run passed every check:
 - `oce_utility` matches for all six utilities and three risk aversions, with and without sample weights.
   `bs_fd` and the statistics helpers match within 1e-8.
 
+`parity/notebook_configs.py` checks that every training in the ported notebooks uses the configuration of the original notebook.
+It runs both sets of notebooks with the training replaced by a recorder and compares the world, payoff, network, objective, optimizer, epochs, batch size, and validation size of each training in order.
+The last run matched all 24 trainings.
+
 ## Differences from the original
 
 - The validation world uses a fixed seed. The original drew a random seed.
