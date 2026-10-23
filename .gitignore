@@ -1,0 +1,6 @@
+__pycache__/
+.audit/
+*.npz
+checkpoints/
+results/
+.ipynb_checkpoints/

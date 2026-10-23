@@ -1,0 +1,17 @@
+[project]
+name = "deephedging"
+version = "0.1.0"
+description = "JAX port of Hans Buehler's Deep Hedging sample code"
+license = { text = "GPL-3.0" }
+requires-python = ">=3.10"
+dependencies = ["jax>=0.4.30", "numpy>=1.23", "scipy>=1.9", "matplotlib>=3.6"]
+
+[project.optional-dependencies]
+notebooks = ["jupyter", "nbclient", "ipykernel"]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["deephedging"]
